@@ -601,6 +601,10 @@ span {
   .portfolio-name p{
 	color: #252525;
   }
+
+  .work p a, .shadow a{
+        text-decoration: none;
+  }
 }
 
 @media screen and (max-width: 510px) {
