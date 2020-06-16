@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-size: 16px;
   color: #000;
+  overflow-x: hidden;
 }
 
 .container {
@@ -95,7 +96,7 @@ h3 {
   width: 30px;
   height: 1px;
   background: #7f7f7f;
-  z-index: 999; */
+  z-index: 999;
 }
 
 .mobile-tab {
@@ -123,10 +124,11 @@ h3 {
 }
 
 .mobile-tab ul {
-  padding: 5% 0;
+  padding: 40px 0 5% 0;
 }
 
 @media screen and (min-width: 768px) {
+
   .mobile-tab,
   #burg,
   #mobile {
@@ -147,9 +149,11 @@ h3 {
     align-items: center;
     justify-content: flex-end;
   }
+
   .mobile-bar {
     display: none;
   }
+
   #desctop {
     display: flex;
   }
@@ -179,6 +183,7 @@ h3 {
     opacity: 0.8;
     box-shadow: inset 1px 1px 5px grey;
   }
+
   #desctop li:hover a {
     color: #2b2b2b;
   }
@@ -324,6 +329,18 @@ h3 {
   margin-top: 60px;
 }
 
+.steps svg {
+  font-size: 30px;
+}
+
+.diag {
+  transform: rotate(330deg);
+}
+
+.rotate svg {
+  transform: rotate(90deg);
+}
+
 .steps li {
   width: 280px;
   height: 280px;
@@ -407,6 +424,7 @@ h3 {
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
+
 .list3b li:before {
   line-height: 32px;
   position: absolute;
@@ -425,9 +443,11 @@ h3 {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 .list3b li:hover:before {
   color: #77aedb;
 }
+
 .list3b li:after {
   position: absolute;
   top: 26px;
@@ -449,6 +469,7 @@ h3 {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 .list3b li:hover:after {
   opacity: 0.2;
   -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
@@ -464,11 +485,12 @@ h3 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 50px -15px 0 -15px;
+  justify-content: space-around;
+  margin: 50px 0 0 0;
 }
 
 .col {
-  width: 23.5%;
+  width: 275px;
   height: fit-content;
   margin: 8px;
   padding-bottom: 20px;
@@ -484,7 +506,7 @@ h3 {
 }
 
 .portfolio-img img {
-  width: 100%;
+  width: 275px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
@@ -546,7 +568,7 @@ h3 {
 }
 
 
-.linebreak{
+.linebreak {
   display: none;
 }
 
@@ -554,19 +576,24 @@ h3 {
   .container {
     width: 768px;
   }
+
   .man {
     display: none;
   }
+
   .text {
     width: auto;
   }
+
   .about {
     padding-top: 74px;
     padding-bottom: 110px;
   }
+
   .two-columns {
     flex-direction: column;
   }
+
   .steps {
     justify-content: center;
     flex-wrap: wrap;
@@ -585,7 +612,7 @@ h3 {
   .container {
     width: auto;
     padding: 0 10px;
-    min-width: 290px;
+    min-width: 280px;
   }
 
   h1 {
@@ -605,27 +632,37 @@ h3 {
     color: #252525;
   }
 
-  .work p a, .shadow a, #offer .socials a  {
+  .work p a,
+  .shadow a,
+  #offer .socials a {
     text-decoration: none;
   }
 
-  .socials span{
+  .socials span {
     display: none;
   }
 
-  #offer .socials a svg{
+  #offer .socials a svg {
     font-size: 3em;
   }
 
-  #offer .socials li{
+  #offer .socials li {
     margin: 15px;
   }
 
-  .linebreak{
+  .socials li:nth-child(3) a {
+    margin-right: 0px;
+  }
+
+  .linebreak {
     display: block;
     clear: both;
     width: 10px;
     margin: -5px;
+  }
+
+  .navigation {
+    background-color: inherit;
   }
 }
 
@@ -645,4 +682,28 @@ h3 {
   h1 {
     font-size: 42px;
   }
+}
+
+@font-face {
+  font-family: Font Awesome\ 5 Brands;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.eot);
+  src: url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.eot?#iefix) format("embedded-opentype"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.woff2) format("woff2"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.woff) format("woff"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.ttf) format("truetype"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.svg#fontawesome) format("svg")
+}
+
+@font-face {
+  font-family: Font Awesome\ 5 Free;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.eot);
+  src: url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.eot?#iefix) format("embedded-opentype"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.woff2) format("woff2"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.woff) format("woff"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.ttf) format("truetype"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.svg#fontawesome) format("svg")
+}
+
+@font-face {
+  font-family: Font Awesome\ 5 Free;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.eot);
+  src: url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.woff2) format("woff2"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.woff) format("woff"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.ttf) format("truetype"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.svg#fontawesome) format("svg")
 }
