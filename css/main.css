@@ -281,6 +281,10 @@ h3 {
   color: #3399ff;
 }
 
+.work p a:hover {
+  opacity: .7;
+}
+
 .date {
   font-weight: 600;
   margin-bottom: -15px;
@@ -388,6 +392,10 @@ h3 {
 
 .shadow li a {
   color: #3399ff;
+}
+
+.shadow li a:hover {
+  opacity: .7;
 }
 
 .shadow li::before {
@@ -650,7 +658,7 @@ h3 {
     margin: 15px;
   }
 
-  .socials li:nth-child(3) a {
+  #offer .socials li:nth-child(3) a {
     margin-right: 0px;
   }
 
@@ -660,7 +668,10 @@ h3 {
     width: 10px;
     margin: -5px;
   }
+}
 
+
+@media screen and (max-width: 767px) {
   .navigation {
     background-color: inherit;
   }
