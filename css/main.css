@@ -687,6 +687,9 @@ h3 {
   .navigation {
     background-color: inherit;
   }
+  .offer-image{
+    width: 70%;
+  }
 }
 
 @media screen and (max-width: 510px) {
