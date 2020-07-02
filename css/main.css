@@ -244,12 +244,12 @@ h3 {
 
 #skills {
   padding: 10vh 0;
-  background-color: #ffe8df;
-  background-image: url("/img/skills.jpeg");
+  background-image: url("../img/skills.jpeg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #ffe8df;
 }
 
 #skills p{
