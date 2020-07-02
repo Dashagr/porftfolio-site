@@ -64,7 +64,7 @@ h3 {
 .header {
   background: #f0f0f0;
   color: #888;
-  padding-bottom: 120px;
+  padding-bottom: 110px;
   padding-top: 10px;
 }
 
@@ -243,8 +243,20 @@ h3 {
 }
 
 #skills {
-  padding: 80px 0;
+  padding: 10vh 0;
   background-color: #ffe8df;
+  background-image: url("/img/skills.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#skills p{
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: 50px;
+    text-align: justify;
 }
 
 #experience,
@@ -583,10 +595,6 @@ h3 {
 @media screen and (max-width: 1200px) {
   .container {
     width: 768px;
-  }
-
-  .man {
-    display: none;
   }
 
   .text {
