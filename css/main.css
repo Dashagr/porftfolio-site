@@ -7,6 +7,10 @@ body {
   overflow-x: hidden;
 }
 
+:root {
+  --img-border-color: #835aeb;
+}
+
 .container {
   width: 1170px;
   margin: 0 auto;
@@ -224,22 +228,115 @@ h3 {
 }
 
 .offer-image {
-  border-radius: 100%;
-  border: 0;
   overflow: hidden;
   width: 35%;
   max-width: 270px;
   margin: 0 auto;
+  position: relative;
+  transition: 0.5s;
+}
+
+span.image-border {
+  position: absolute;
+  display: block;
+}
+
+
+span.image-border:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--img-border-color));
+  animation: loading1 1.75s linear infinite;
+}
+
+@keyframes loading1 {
+  0% {
+    left: -100%;
+  }
+
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+span.image-border:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, var(--img-border-color));
+  animation: loading2 1.75s linear infinite;
+  animation-delay: 0.25s;
+}
+
+@keyframes loading2 {
+  0% {
+    top: -100%;
+  }
+
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+
+span.image-border:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, var(--img-border-color));
+  animation: loading3 1.75s linear infinite;
+  animation-delay: 0.25s;
+}
+
+@keyframes loading3 {
+  0% {
+    right: -100%;
+  }
+
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+span.image-border:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100px;
+  background: linear-gradient(360deg, transparent, var(--img-border-color));
+  animation: loading4 1.75s linear infinite;
+  animation-delay: 0.25s;
+}
+
+@keyframes loading4 {
+  0% {
+    top: 100%;
+  }
+
+  50%,
+  100% {
+    top: -100%;
+  }
 }
 
 #offer img {
   width: 100%;
+  border-radius: 100%;
   transition: 1s;
   display: block;
+
 }
 
 #offer img:hover {
-  transform: scale(1.2);
+  border-radius: 0%;
+  transition: 0.5s;
 }
 
 #skills {
@@ -252,15 +349,16 @@ h3 {
   background-color: #ffe8df;
 }
 
-#skills p{
-    background-color: aliceblue;
-    border-radius: 20px;
-    padding: 50px;
-    text-align: justify;
+#skills p {
+  background-color: aliceblue;
+  border-radius: 20px;
+  padding: 50px;
+  text-align: justify;
 }
 
-#skills .title h2{
+#skills .title h2 {
   color: #f0f0f0;
+  -webkit-box-reflect: below -17px linear-gradient(transparent, #0003);
 }
 
 #experience,
@@ -282,6 +380,7 @@ h3 {
 
 .title h2 {
   color: #737373;
+  -webkit-box-reflect: below -17px linear-gradient(transparent, #0002);
 }
 
 .text {
@@ -372,6 +471,11 @@ h3 {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
+.steps li:hover h4 {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
 .steps li:nth-child(2) {
   background: #835aeb;
 }
@@ -382,6 +486,39 @@ h3 {
 
 .steps li:nth-child(4) {
   background: #ff2b4a;
+}
+
+.steps li:nth-child(1) h4 {
+  animation: shadowing 4s infinite;
+}
+
+.steps li:nth-child(2) h4 {
+  animation: shadowing 4s infinite;
+  animation-delay: 0.5s;
+}
+
+.steps li:nth-child(3) h4 {
+  animation: shadowing 4s infinite;
+  animation-delay: 1s;
+}
+
+.steps li:nth-child(4) h4 {
+  animation: shadowing 4s infinite;
+  animation-delay: 1.5s;
+}
+
+@keyframes shadowing {
+  0% {
+    transform: scale(1.2);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.2);
+  }
 }
 
 .steps li div {
@@ -558,6 +695,41 @@ h3 {
   opacity: 0.7;
 }
 
+.col:nth-child(1) .portfolio-name,
+.col:nth-child(8) .portfolio-name {
+  animation: brigth-text 4s linear infinite;
+}
+
+.col:nth-child(2) .portfolio-name,
+.col:nth-child(7) .portfolio-name {
+  animation: brigth-text 4s linear infinite;
+  animation-delay: 1s;
+}
+
+.col:nth-child(3) .portfolio-name,
+.col:nth-child(6) .portfolio-name {
+  animation: brigth-text 4s linear infinite;
+  animation-delay: 2s;
+}
+
+.col:nth-child(4) .portfolio-name,
+.col:nth-child(5) .portfolio-name {
+  animation: brigth-text 4s linear infinite;
+  animation-delay: 3s;
+}
+
+@keyframes brigth-text {
+  /* 
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }*/
+}
+
 .footer {
   background: #222222;
   color: #9c9c9c;
@@ -687,7 +859,8 @@ h3 {
   .navigation {
     background-color: inherit;
   }
-  .offer-image{
+
+  .offer-image {
     width: 70%;
   }
 }
