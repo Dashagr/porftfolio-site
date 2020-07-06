@@ -672,6 +672,9 @@ span.image-border:nth-child(4) {
 }
 
 .portfolio-img img:hover {
+  transform: scale(1.2, 1.2);
+  transition-timing-function: ease-out;
+  transition-duration: 550ms;
   -webkit-transform: scale(1.2, 1.2);
   -webkit-transition-timing-function: ease-out;
   -webkit-transition-duration: 550ms;
@@ -693,41 +696,6 @@ span.image-border:nth-child(4) {
 
 .portfolio-name:hover span {
   opacity: 0.7;
-}
-
-.col:nth-child(1) .portfolio-name,
-.col:nth-child(8) .portfolio-name {
-  animation: brigth-text 4s linear infinite;
-}
-
-.col:nth-child(2) .portfolio-name,
-.col:nth-child(7) .portfolio-name {
-  animation: brigth-text 4s linear infinite;
-  animation-delay: 1s;
-}
-
-.col:nth-child(3) .portfolio-name,
-.col:nth-child(6) .portfolio-name {
-  animation: brigth-text 4s linear infinite;
-  animation-delay: 2s;
-}
-
-.col:nth-child(4) .portfolio-name,
-.col:nth-child(5) .portfolio-name {
-  animation: brigth-text 4s linear infinite;
-  animation-delay: 3s;
-}
-
-@keyframes brigth-text {
-  /* 
-  0%,
-  100% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.1);
-  }*/
 }
 
 .footer {
