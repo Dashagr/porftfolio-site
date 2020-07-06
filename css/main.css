@@ -132,6 +132,7 @@ h3 {
 }
 
 @media screen and (min-width: 768px) {
+
   .mobile-tab,
   #burg,
   #mobile {
@@ -207,6 +208,7 @@ h3 {
   color: #646363;
 }
 
+
 #offer .socials a:hover {
   color: #10c6fc;
 }
@@ -238,6 +240,7 @@ span.image-border {
   position: absolute;
   display: block;
 }
+
 
 span.image-border:nth-child(1) {
   top: 0;
@@ -279,6 +282,7 @@ span.image-border:nth-child(2) {
     top: 100%;
   }
 }
+
 
 span.image-border:nth-child(3) {
   bottom: 0;
@@ -327,6 +331,7 @@ span.image-border:nth-child(4) {
   border-radius: 100%;
   transition: 1s;
   display: block;
+
 }
 
 #offer img:hover {
@@ -392,7 +397,7 @@ span.image-border:nth-child(4) {
 }
 
 .work p a:hover {
-  opacity: 0.7;
+  opacity: .7;
 }
 
 .date {
@@ -543,7 +548,7 @@ span.image-border:nth-child(4) {
 }
 
 .shadow li a:hover {
-  opacity: 0.7;
+  opacity: .7;
 }
 
 .shadow li::before {
@@ -667,6 +672,9 @@ span.image-border:nth-child(4) {
 }
 
 .portfolio-img img:hover {
+  transform: scale(1.2, 1.2);
+  transition-timing-function: ease-out;
+  transition-duration: 550ms;
   -webkit-transform: scale(1.2, 1.2);
   -webkit-transition-timing-function: ease-out;
   -webkit-transition-duration: 550ms;
@@ -722,6 +730,7 @@ span.image-border:nth-child(4) {
 .socials li:hover a {
   color: red;
 }
+
 
 .linebreak {
   display: none;
@@ -813,6 +822,7 @@ span.image-border:nth-child(4) {
   }
 }
 
+
 @media screen and (max-width: 767px) {
   .navigation {
     background-color: inherit;
@@ -842,55 +852,28 @@ span.image-border:nth-child(4) {
 }
 
 @font-face {
-  font-family: Font Awesome\5 Brands;
+  font-family: Font Awesome\ 5 Brands;
   font-style: normal;
   font-weight: 400;
   src: url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.eot);
-  src: url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.eot?#iefix)
-      format("embedded-opentype"),
-    url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.woff2)
-      format("woff2"),
-    url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.woff)
-      format("woff"),
-    url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.ttf)
-      format("truetype"),
-    url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.svg#fontawesome)
-      format("svg");
+  src: url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.eot?#iefix) format("embedded-opentype"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.woff2) format("woff2"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.woff) format("woff"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.ttf) format("truetype"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.svg#fontawesome) format("svg");
   font-display: swap;
 }
 
 @font-face {
-  font-family: Font Awesome\5 Free;
+  font-family: Font Awesome\ 5 Free;
   font-style: normal;
   font-weight: 400;
   src: url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.eot);
-  src: url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.eot?#iefix)
-      format("embedded-opentype"),
-    url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.woff2)
-      format("woff2"),
-    url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.woff)
-      format("woff"),
-    url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.ttf)
-      format("truetype"),
-    url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.svg#fontawesome)
-      format("svg");
+  src: url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.eot?#iefix) format("embedded-opentype"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.woff2) format("woff2"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.woff) format("woff"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.ttf) format("truetype"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.svg#fontawesome) format("svg");
   font-display: swap;
 }
 
 @font-face {
-  font-family: Font Awesome\5 Free;
+  font-family: Font Awesome\ 5 Free;
   font-style: normal;
   font-weight: 900;
   font-display: swap;
   src: url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.eot);
-  src: url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.eot?#iefix)
-      format("embedded-opentype"),
-    url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.woff2)
-      format("woff2"),
-    url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.woff)
-      format("woff"),
-    url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.ttf)
-      format("truetype"),
-    url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.svg#fontawesome)
-      format("svg");
+  src: url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.woff2) format("woff2"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.woff) format("woff"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.ttf) format("truetype"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.svg#fontawesome) format("svg")
 }
