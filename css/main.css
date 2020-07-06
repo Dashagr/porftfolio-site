@@ -68,7 +68,7 @@ h3 {
 .header {
   background: #f0f0f0;
   color: #888;
-  padding-bottom: 110px;
+  padding-bottom: 105px;
   padding-top: 10px;
 }
 
@@ -132,7 +132,6 @@ h3 {
 }
 
 @media screen and (min-width: 768px) {
-
   .mobile-tab,
   #burg,
   #mobile {
@@ -208,7 +207,6 @@ h3 {
   color: #646363;
 }
 
-
 #offer .socials a:hover {
   color: #10c6fc;
 }
@@ -240,7 +238,6 @@ span.image-border {
   position: absolute;
   display: block;
 }
-
 
 span.image-border:nth-child(1) {
   top: 0;
@@ -282,7 +279,6 @@ span.image-border:nth-child(2) {
     top: 100%;
   }
 }
-
 
 span.image-border:nth-child(3) {
   bottom: 0;
@@ -331,7 +327,6 @@ span.image-border:nth-child(4) {
   border-radius: 100%;
   transition: 1s;
   display: block;
-
 }
 
 #offer img:hover {
@@ -363,7 +358,7 @@ span.image-border:nth-child(4) {
 
 #experience,
 #education {
-  padding: 80px 0;
+  padding: 70px 0;
   background-color: #fff;
 }
 
@@ -397,7 +392,7 @@ span.image-border:nth-child(4) {
 }
 
 .work p a:hover {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .date {
@@ -428,7 +423,7 @@ span.image-border:nth-child(4) {
 }
 
 .heading {
-  padding-top: 62px;
+  padding-top: 60px;
   text-align: center;
 }
 
@@ -548,7 +543,7 @@ span.image-border:nth-child(4) {
 }
 
 .shadow li a:hover {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .shadow li::before {
@@ -695,41 +690,6 @@ span.image-border:nth-child(4) {
   opacity: 0.7;
 }
 
-.col:nth-child(1) .portfolio-name,
-.col:nth-child(8) .portfolio-name {
-  animation: brigth-text 4s linear infinite;
-}
-
-.col:nth-child(2) .portfolio-name,
-.col:nth-child(7) .portfolio-name {
-  animation: brigth-text 4s linear infinite;
-  animation-delay: 1s;
-}
-
-.col:nth-child(3) .portfolio-name,
-.col:nth-child(6) .portfolio-name {
-  animation: brigth-text 4s linear infinite;
-  animation-delay: 2s;
-}
-
-.col:nth-child(4) .portfolio-name,
-.col:nth-child(5) .portfolio-name {
-  animation: brigth-text 4s linear infinite;
-  animation-delay: 3s;
-}
-
-@keyframes brigth-text {
-  /* 
-  0%,
-  100% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.1);
-  }*/
-}
-
 .footer {
   background: #222222;
   color: #9c9c9c;
@@ -762,7 +722,6 @@ span.image-border:nth-child(4) {
 .socials li:hover a {
   color: red;
 }
-
 
 .linebreak {
   display: none;
@@ -854,7 +813,6 @@ span.image-border:nth-child(4) {
   }
 }
 
-
 @media screen and (max-width: 767px) {
   .navigation {
     background-color: inherit;
@@ -884,28 +842,55 @@ span.image-border:nth-child(4) {
 }
 
 @font-face {
-  font-family: Font Awesome\ 5 Brands;
+  font-family: Font Awesome\5 Brands;
   font-style: normal;
   font-weight: 400;
   src: url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.eot);
-  src: url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.eot?#iefix) format("embedded-opentype"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.woff2) format("woff2"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.woff) format("woff"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.ttf) format("truetype"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.svg#fontawesome) format("svg");
+  src: url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.eot?#iefix)
+      format("embedded-opentype"),
+    url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.woff2)
+      format("woff2"),
+    url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.woff)
+      format("woff"),
+    url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.ttf)
+      format("truetype"),
+    url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.svg#fontawesome)
+      format("svg");
   font-display: swap;
 }
 
 @font-face {
-  font-family: Font Awesome\ 5 Free;
+  font-family: Font Awesome\5 Free;
   font-style: normal;
   font-weight: 400;
   src: url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.eot);
-  src: url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.eot?#iefix) format("embedded-opentype"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.woff2) format("woff2"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.woff) format("woff"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.ttf) format("truetype"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.svg#fontawesome) format("svg");
+  src: url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.eot?#iefix)
+      format("embedded-opentype"),
+    url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.woff2)
+      format("woff2"),
+    url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.woff)
+      format("woff"),
+    url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.ttf)
+      format("truetype"),
+    url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.svg#fontawesome)
+      format("svg");
   font-display: swap;
 }
 
 @font-face {
-  font-family: Font Awesome\ 5 Free;
+  font-family: Font Awesome\5 Free;
   font-style: normal;
   font-weight: 900;
   font-display: swap;
   src: url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.eot);
-  src: url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.woff2) format("woff2"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.woff) format("woff"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.ttf) format("truetype"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.svg#fontawesome) format("svg")
+  src: url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.eot?#iefix)
+      format("embedded-opentype"),
+    url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.woff2)
+      format("woff2"),
+    url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.woff)
+      format("woff"),
+    url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.ttf)
+      format("truetype"),
+    url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.svg#fontawesome)
+      format("svg");
 }
