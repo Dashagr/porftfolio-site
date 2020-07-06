@@ -68,7 +68,7 @@ h3 {
 .header {
   background: #f0f0f0;
   color: #888;
-  padding-bottom: 110px;
+  padding-bottom: 105px;
   padding-top: 10px;
 }
 
@@ -363,7 +363,7 @@ span.image-border:nth-child(4) {
 
 #experience,
 #education {
-  padding: 80px 0;
+  padding: 70px 0;
   background-color: #fff;
 }
 
@@ -428,7 +428,7 @@ span.image-border:nth-child(4) {
 }
 
 .heading {
-  padding-top: 62px;
+  padding-top: 60px;
   text-align: center;
 }
 
