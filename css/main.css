@@ -482,8 +482,28 @@ span.image-border:nth-child(4) {
   -webkit-box-reflect: below -17px linear-gradient(transparent, #0002);
 }
 
+#experience h2 {
+  position: relative;
+  z-index: 2;
+  font-size: 8rem;
+  overflow: hidden;
+  opacity: .3;
+}
+
+#experience .text {
+  background-color: rgba(255, 255, 255, .8);
+  position: relative;
+  margin-top: -4em;
+  padding: 3em 4em;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  margin-left: auto;
+  z-index: 3;
+}
+
 .text {
-  width: 60%;
+  width: 70%;
 }
 
 .text p {
@@ -989,6 +1009,15 @@ button:active {
 
   .portfolio-name p {
     color: #252525;
+  }
+
+  #experience .text {
+    width: 70%;
+    margin-top: -1.5em;
+  }
+
+  #experience h2 {
+    font-size: 3.5em;
   }
 
   .work p a,
