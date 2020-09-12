@@ -787,6 +787,33 @@ span.image-border:nth-child(4) {
 
 #portfolio {
   background-color: #f6f6f6;
+  padding-bottom: 3em;
+}
+
+
+button {
+  padding: 1em 3em;
+  outline: none;
+  border: 1px solid #000;
+  margin: 1em auto 4em auto;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  -webkit-transition: all .5s ease 0s;
+  -o-transition: all .5s ease 0s;
+  transition: all .5s ease 0s;
+  background: transparent;
+}
+
+button:hover {
+  background: rgba(0, 0, 0, 0.15);
+  color: #fff;
+  border-color: transparent;
+}
+
+button:focus,
+button:active {
+  background: rgba(0, 0, 0, 0.25);
 }
 
 .portfolio-grid {
