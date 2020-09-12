@@ -811,7 +811,6 @@ button:hover {
   border-color: transparent;
 }
 
-button:focus,
 button:active {
   background: rgba(0, 0, 0, 0.25);
 }
