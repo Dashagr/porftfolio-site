@@ -1,8 +1,13 @@
 // toggle menu
 $('.mobile-tab').hide();
 
-$('#burg').on('click', function () {
+$('#burg').click(function (e) {
+  e.preventDefault();
   $('.mobile-tab').slideToggle(500);
+});
+
+$('.scroll').click(function () {
+  $('.mobile-tab').hide();
 });
 
 //easy scrolling effect
@@ -19,9 +24,14 @@ $('.scroll').click(function (e) {
   e.preventDefault();
 });
 
+//skills prevent events
+$('.skills-block').click(function (e) {
+  e.preventDefault();
+});
+
 //showing more portfolio works
 
 $('.more-grid').hide();
-$('.more').on('click', function () {
+$('.more').click(function () {
   $('.more-grid').slideToggle(500);
 });
