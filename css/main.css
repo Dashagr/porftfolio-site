@@ -464,7 +464,7 @@ span.image-border:nth-child(4) {
 #skills .text {
   background-color: var(--light-color);
   border-radius: 20px;
-  padding: 50px;
+  padding: 80px 50px 50px 50px;
   text-align: center;
 }
 
