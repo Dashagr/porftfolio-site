@@ -790,13 +790,14 @@ span.image-border:nth-child(4) {
 }
 
 .list3b a {
-  font-weight: 600;
-  font-size: 1.2em;
+  font-weight: 500;
+  font-size: 1.4em;
   margin-left: 15px;
+  color: var(--process-1);
 }
 
 .list3b a:hover {
-  color: var(--process-1);
+  opacity: .7;
 }
 
 .list3b li {
