@@ -135,7 +135,7 @@ h3 {
   flex-direction: column;
 }
 
-#desctop {
+#desktop {
   display: none;
 }
 
@@ -189,7 +189,7 @@ h3 {
     display: none;
   }
 
-  #desctop {
+  #desktop {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -201,32 +201,29 @@ h3 {
     margin: 0;
   }
 
-  #desctop ul {
+  #desktop ul {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
     list-style-type: none;
   }
 
-  #desctop li {
+  #desktop li {
     color: var(--light-color);
     cursor: pointer;
     padding: 15px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
     width: 90px;
     text-align: center;
     letter-spacing: 1px;
-    -webkit-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
   }
 
-  #desctop li:hover {
-    opacity: 0.8;
-    -webkit-box-shadow: inset 1px 1px 5px grey;
-    box-shadow: inset 1px 1px 5px grey;
+  #desktop li:hover {
+    opacity: 0.7;
   }
 
-  #desctop li:hover a {
+  #desktop li:hover a {
     color: #2b2b2b;
   }
 }
