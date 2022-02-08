@@ -469,7 +469,7 @@ span.image-border:nth-child(4) {
   margin: 30px 0;
 }
 
-.skills-block a {
+.skills-block span {
   display: inline-block;
   text-decoration: none;
   color: var(--dark-color-v2);
@@ -479,7 +479,7 @@ span.image-border:nth-child(4) {
   border: 1px solid var(--light-color-v2);
 }
 
-.skills-block a:hover {
+.skills-block span:hover {
   color: var(--light-color-v2);
   background-color: var(--dark-color);
 }
@@ -539,9 +539,21 @@ span.image-border:nth-child(4) {
   width: 70%;
 }
 
-.text p {
+.text p, .text li {
   color: var(--gray-color-v2);
   line-height: 1.66em;
+}
+
+.text ul{
+  margin-top: 20px;
+}
+
+.text h4{
+  color: var(--gray-color-v2);
+}
+
+.text .special-skills{
+  margin-left: 30px;
 }
 
 .work p a {
@@ -1141,6 +1153,9 @@ button:active {
   #experience .text {
     width: 100%;
     margin: 0;
+  }
+  .text .special-skills{
+    margin-left: 15px;
   }
 }
 
